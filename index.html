@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>tiny blackjack</title>
+		<meta name="description" content="A simple blackjack game">
+
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="node_modules/reset-css/reset.css?v=1.0">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css?v=1.0">
+		<link rel="stylesheet" href="css/index.css?v=1.0">
+	</head>
+
+	<body>
+
+	<div class="status_bar">
+		<ul class="players">
+			<li>Player 1 <div class="total_cash">$210</div></li>
+			<li>Player 2 <div class="total_cash">$39</div></li>
+		</ul>
+	</div>
+
+	<div class="play_area">
+		<ul class="hand dealers_hand">
+			<li class="card face_down">
+			</li>
+			<li class="card">
+				<span class="type">A</span>
+				<span class="suit">&spades;</span>
+			</li>
+		</ul>
+
+		<ul class="hand players_hand">
+			<li class="card">
+				<span class="type">6</span>
+				<span class="suit">&diams;</span>
+			</li>
+			<li class="card">
+				<span class="type">J</span>
+				<span class="suit">&spades;</span>
+			</li>
+		</ul>
+
+		<div class="actions">
+			my bet is
+			<a id="bet_5_button">$5</a>
+			<a id="bet_4_button">$4</a>
+			<a id="bet_3_button">$3</a>
+			<a id="bet_2_button">$2</a>
+			<a id="bet_1_button">$1</a>
+		</div>
+	</div>
+
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
